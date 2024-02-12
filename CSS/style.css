@@ -6,12 +6,16 @@
 
 .pet-photos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); /* responsiveness*/
+    gap: 10px; /* Gap between photos */
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 img{
-    width: 400px;
-}
+    width: 100%;
+    height: auto;
+  }
 
 /*-------------------------------Colors */
 
@@ -146,5 +150,5 @@ img{
 /* focused, this is the accessible version */
 .skip-link:focus {
     transform: translateY(0%);
-    display:initial
+    display:visible;
 }
