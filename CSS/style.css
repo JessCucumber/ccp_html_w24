@@ -1,7 +1,7 @@
 /*-------------------------------gridddddds*/
 .grid-container{
     display: grid;
-    background-color: #00274c;
+    background-color: #581f00;
 }
 
 .pet-photos{
@@ -16,9 +16,9 @@ img{
 /*-------------------------------Colors */
 
   :root{
-    --orange: #ed7d2d;
+    --orange: #c96100;
     --hoverorange: #eab61c;
-    --nice-pink:#ed6874;
+    --nice-pink:#a9414a;
     --dark-pink: #be4c15;
 
   }
@@ -77,7 +77,6 @@ img{
     padding: 20px;
     font-size: 28px;
   }
-  
   /*-------------------------------Footer */
   footer {
     background-color: var(--nice-pink);
@@ -140,10 +139,12 @@ img{
     position: absolute;
     transform: translateY(-100%);
     transition: 0.3s;
+    display:none
   }
   
 
 /* focused, this is the accessible version */
 .skip-link:focus {
     transform: translateY(0%);
+    display:initial
 }
